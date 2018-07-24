@@ -1,0 +1,6 @@
+framework module Pods_iTATests {
+  umbrella header "Pods-iTATests-umbrella.h"
+
+  export *
+  module * { export * }
+}

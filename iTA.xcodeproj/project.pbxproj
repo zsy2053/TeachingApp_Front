@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3234CE92BEFE2BB97DFED3FD /* Pods_iTAUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1345AAEFFEE6C4DDCC3FD8E /* Pods_iTAUITests.framework */; };
+		4431F44F2106A83E00EDFD3F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4431F44E2106A83E00EDFD3F /* Alamofire.framework */; };
+		4434ABA32106CA8200BC1980 /* DLRadioButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4434ABA22106CA8200BC1980 /* DLRadioButton.framework */; };
+		4479C62C210022C300E7035B /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479C62B210022C300E7035B /* RestApiManager.swift */; };
 		44F5B4FB20EC65C200CCDB0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5B4FA20EC65C200CCDB0F /* AppDelegate.swift */; };
 		44F5B4FD20EC65C200CCDB0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5B4FC20EC65C200CCDB0F /* ViewController.swift */; };
 		44F5B50020EC65C200CCDB0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F5B4FE20EC65C200CCDB0F /* Main.storyboard */; };
@@ -14,6 +18,10 @@
 		44F5B50520EC65C300CCDB0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F5B50320EC65C300CCDB0F /* LaunchScreen.storyboard */; };
 		44F5B51020EC65C300CCDB0F /* iTATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5B50F20EC65C300CCDB0F /* iTATests.swift */; };
 		44F5B51B20EC65C300CCDB0F /* iTAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5B51A20EC65C300CCDB0F /* iTAUITests.swift */; };
+		44F5B52A20EC675B00CCDB0F /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F5B52920EC675B00CCDB0F /* LocalAuthentication.framework */; };
+		44F5B52E20EC6CAB00CCDB0F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5B52D20EC6CAB00CCDB0F /* RegisterViewController.swift */; };
+		A23B5C5218213164244C0EEF /* Pods_iTA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48063A8E713F1BB3682DE10C /* Pods_iTA.framework */; };
+		FC336106AF123F60CF8F3ADA /* Pods_iTATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88E8AFF6AF4DD66677E6FEA4 /* Pods_iTATests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10A37E65B7DB46B84F6E63F1 /* Pods-iTAUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTAUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTAUITests/Pods-iTAUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4431F44E2106A83E00EDFD3F /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4434ABA22106CA8200BC1980 /* DLRadioButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DLRadioButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4479C62B210022C300E7035B /* RestApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
 		44F5B4F720EC65C200CCDB0F /* iTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F5B4FA20EC65C200CCDB0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44F5B4FC20EC65C200CCDB0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +59,16 @@
 		44F5B51620EC65C300CCDB0F /* iTAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F5B51A20EC65C300CCDB0F /* iTAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTAUITests.swift; sourceTree = "<group>"; };
 		44F5B51C20EC65C300CCDB0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44F5B52920EC675B00CCDB0F /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		44F5B52D20EC6CAB00CCDB0F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = Supportcontrollers/RegisterViewController.swift; sourceTree = "<group>"; };
+		48063A8E713F1BB3682DE10C /* Pods_iTA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		815E1F78EF99045FE80553C8 /* Pods-iTATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTATests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTATests/Pods-iTATests.release.xcconfig"; sourceTree = "<group>"; };
+		839E4318AE597362213E336C /* Pods-iTATests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTATests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTATests/Pods-iTATests.debug.xcconfig"; sourceTree = "<group>"; };
+		88E8AFF6AF4DD66677E6FEA4 /* Pods_iTATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4E6E82D5E1059595A27A6F9 /* Pods-iTAUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTAUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTAUITests/Pods-iTAUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CE77839A8E045533451455D3 /* Pods-iTA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTA/Pods-iTA.debug.xcconfig"; sourceTree = "<group>"; };
+		F1345AAEFFEE6C4DDCC3FD8E /* Pods_iTAUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTAUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2450010A8740F64B853BFC3 /* Pods-iTA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTA.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTA/Pods-iTA.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4434ABA32106CA8200BC1980 /* DLRadioButton.framework in Frameworks */,
+				4431F44F2106A83E00EDFD3F /* Alamofire.framework in Frameworks */,
+				44F5B52A20EC675B00CCDB0F /* LocalAuthentication.framework in Frameworks */,
+				A23B5C5218213164244C0EEF /* Pods_iTA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC336106AF123F60CF8F3ADA /* Pods_iTATests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +95,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3234CE92BEFE2BB97DFED3FD /* Pods_iTAUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A48EC45CA720CC1EE0F10E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE77839A8E045533451455D3 /* Pods-iTA.debug.xcconfig */,
+				F2450010A8740F64B853BFC3 /* Pods-iTA.release.xcconfig */,
+				839E4318AE597362213E336C /* Pods-iTATests.debug.xcconfig */,
+				815E1F78EF99045FE80553C8 /* Pods-iTATests.release.xcconfig */,
+				10A37E65B7DB46B84F6E63F1 /* Pods-iTAUITests.debug.xcconfig */,
+				C4E6E82D5E1059595A27A6F9 /* Pods-iTAUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		44F5B4EE20EC65C200CCDB0F = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +122,8 @@
 				44F5B50E20EC65C300CCDB0F /* iTATests */,
 				44F5B51920EC65C300CCDB0F /* iTAUITests */,
 				44F5B4F820EC65C200CCDB0F /* Products */,
+				44F5B52820EC675B00CCDB0F /* Frameworks */,
+				1A48EC45CA720CC1EE0F10E7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +142,12 @@
 			children = (
 				44F5B4FA20EC65C200CCDB0F /* AppDelegate.swift */,
 				44F5B4FC20EC65C200CCDB0F /* ViewController.swift */,
+				44F5B52D20EC6CAB00CCDB0F /* RegisterViewController.swift */,
 				44F5B4FE20EC65C200CCDB0F /* Main.storyboard */,
 				44F5B50120EC65C300CCDB0F /* Assets.xcassets */,
 				44F5B50320EC65C300CCDB0F /* LaunchScreen.storyboard */,
 				44F5B50620EC65C300CCDB0F /* Info.plist */,
+				4479C62B210022C300E7035B /* RestApiManager.swift */,
 			);
 			path = iTA;
 			sourceTree = "<group>";
@@ -125,6 +170,19 @@
 			path = iTAUITests;
 			sourceTree = "<group>";
 		};
+		44F5B52820EC675B00CCDB0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4434ABA22106CA8200BC1980 /* DLRadioButton.framework */,
+				4431F44E2106A83E00EDFD3F /* Alamofire.framework */,
+				44F5B52920EC675B00CCDB0F /* LocalAuthentication.framework */,
+				48063A8E713F1BB3682DE10C /* Pods_iTA.framework */,
+				88E8AFF6AF4DD66677E6FEA4 /* Pods_iTATests.framework */,
+				F1345AAEFFEE6C4DDCC3FD8E /* Pods_iTAUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44F5B51F20EC65C300CCDB0F /* Build configuration list for PBXNativeTarget "iTA" */;
 			buildPhases = (
+				FB8AACD91F5FDDFEE52A5C74 /* [CP] Check Pods Manifest.lock */,
 				44F5B4F320EC65C200CCDB0F /* Sources */,
 				44F5B4F420EC65C200CCDB0F /* Frameworks */,
 				44F5B4F520EC65C200CCDB0F /* Resources */,
+				6A8B82FD0ACF4D63FF2E12B9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44F5B52220EC65C300CCDB0F /* Build configuration list for PBXNativeTarget "iTATests" */;
 			buildPhases = (
+				E5AA6FE868556A58BF602588 /* [CP] Check Pods Manifest.lock */,
 				44F5B50720EC65C300CCDB0F /* Sources */,
 				44F5B50820EC65C300CCDB0F /* Frameworks */,
 				44F5B50920EC65C300CCDB0F /* Resources */,
@@ -167,6 +228,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44F5B52520EC65C300CCDB0F /* Build configuration list for PBXNativeTarget "iTAUITests" */;
 			buildPhases = (
+				4B441688DF29936FC2AB72FA /* [CP] Check Pods Manifest.lock */,
 				44F5B51220EC65C300CCDB0F /* Sources */,
 				44F5B51320EC65C300CCDB0F /* Frameworks */,
 				44F5B51420EC65C300CCDB0F /* Resources */,
@@ -251,12 +313,93 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4B441688DF29936FC2AB72FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iTAUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A8B82FD0ACF4D63FF2E12B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iTA/Pods-iTA-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLRadioButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iTA/Pods-iTA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5AA6FE868556A58BF602588 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iTATests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB8AACD91F5FDDFEE52A5C74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iTA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		44F5B4F320EC65C200CCDB0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44F5B52E20EC6CAB00CCDB0F /* RegisterViewController.swift in Sources */,
 				44F5B4FD20EC65C200CCDB0F /* ViewController.swift in Sources */,
+				4479C62C210022C300E7035B /* RestApiManager.swift in Sources */,
 				44F5B4FB20EC65C200CCDB0F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +571,7 @@
 		};
 		44F5B52020EC65C300CCDB0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE77839A8E045533451455D3 /* Pods-iTA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -445,6 +589,7 @@
 		};
 		44F5B52120EC65C300CCDB0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2450010A8740F64B853BFC3 /* Pods-iTA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -462,6 +607,7 @@
 		};
 		44F5B52320EC65C300CCDB0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 839E4318AE597362213E336C /* Pods-iTATests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -482,6 +628,7 @@
 		};
 		44F5B52420EC65C300CCDB0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 815E1F78EF99045FE80553C8 /* Pods-iTATests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +649,7 @@
 		};
 		44F5B52620EC65C300CCDB0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10A37E65B7DB46B84F6E63F1 /* Pods-iTAUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -521,6 +669,7 @@
 		};
 		44F5B52720EC65C300CCDB0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4E6E82D5E1059595A27A6F9 /* Pods-iTAUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
