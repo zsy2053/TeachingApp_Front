@@ -10,6 +10,7 @@
 		3234CE92BEFE2BB97DFED3FD /* Pods_iTAUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1345AAEFFEE6C4DDCC3FD8E /* Pods_iTAUITests.framework */; };
 		4431F44F2106A83E00EDFD3F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4431F44E2106A83E00EDFD3F /* Alamofire.framework */; };
 		4434ABA32106CA8200BC1980 /* DLRadioButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4434ABA22106CA8200BC1980 /* DLRadioButton.framework */; };
+		444724F52108159700519169 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444724F42108159700519169 /* Authentication.swift */; };
 		4479C62C210022C300E7035B /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479C62B210022C300E7035B /* RestApiManager.swift */; };
 		44F5B4FB20EC65C200CCDB0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5B4FA20EC65C200CCDB0F /* AppDelegate.swift */; };
 		44F5B4FD20EC65C200CCDB0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5B4FC20EC65C200CCDB0F /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 		10A37E65B7DB46B84F6E63F1 /* Pods-iTAUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTAUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTAUITests/Pods-iTAUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4431F44E2106A83E00EDFD3F /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4434ABA22106CA8200BC1980 /* DLRadioButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DLRadioButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		444724F42108159700519169 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Authentication.swift; path = Supportcontrollers/Authentication.swift; sourceTree = "<group>"; };
 		4479C62B210022C300E7035B /* RestApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
 		44F5B4F720EC65C200CCDB0F /* iTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F5B4FA20EC65C200CCDB0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				44F5B4FC20EC65C200CCDB0F /* ViewController.swift */,
 				44F5B52D20EC6CAB00CCDB0F /* RegisterViewController.swift */,
 				44F5B4FE20EC65C200CCDB0F /* Main.storyboard */,
+				444724F42108159700519169 /* Authentication.swift */,
 				44F5B50120EC65C300CCDB0F /* Assets.xcassets */,
 				44F5B50320EC65C300CCDB0F /* LaunchScreen.storyboard */,
 				44F5B50620EC65C300CCDB0F /* Info.plist */,
@@ -400,6 +403,7 @@
 				44F5B52E20EC6CAB00CCDB0F /* RegisterViewController.swift in Sources */,
 				44F5B4FD20EC65C200CCDB0F /* ViewController.swift in Sources */,
 				4479C62C210022C300E7035B /* RestApiManager.swift in Sources */,
+				444724F52108159700519169 /* Authentication.swift in Sources */,
 				44F5B4FB20EC65C200CCDB0F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
