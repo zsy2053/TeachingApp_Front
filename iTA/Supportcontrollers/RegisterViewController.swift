@@ -53,7 +53,7 @@ class RegisterViewController: UIViewController {
     }
     
     func checkPassword() {
-        if (EmailCheck.text == "" && PasswordError.text == "" && PasswordConfirmError.text == "") {
+        if (EmailCheck.text == "" && PasswordError.text == "" && PasswordConfirmError.text == "" && !user_status.isEmpty) {
             Register.isEnabled = true
         } else {
             Register.isEnabled = false
