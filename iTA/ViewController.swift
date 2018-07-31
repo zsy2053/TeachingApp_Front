@@ -38,13 +38,13 @@ class ViewController: UIViewController {
     
     @IBAction func TeacherLogin(_ sender: Any) {
         print("asfasf")
-        authenticationWithFaceID(userName: userName, password: password, status: "teacher")
+        authenticationWithFaceID(userName: userName, password: password, status: "teacher", my_self: self)
     }
     
     
     @IBAction func StudentLogin(_ sender: Any) {
         print(":sad")
-        authenticationWithFaceID(userName: userName, password: password, status: "student")
+        authenticationWithFaceID(userName: userName, password: password, status: "student", my_self: self)
     }
     
     override func didReceiveMemoryWarning() {
@@ -56,7 +56,7 @@ class ViewController: UIViewController {
 }
 
 extension ViewController {
-    func authenticationWithFaceID( userName: String, password: String, status: String) {
+    func authenticationWithFaceID( userName: String, password: String, status: String, my_self: ViewController) {
         let localAuthenticationContext = LAContext()
         localAuthenticationContext.localizedFallbackTitle = "Use Passcode"
         
@@ -78,9 +78,9 @@ extension ViewController {
                         case .success:
                             print("success login")
                             let VC = self.storyboard?.instantiateViewController(withIdentifier: "Authentication")
-                            self.present(VC!, animated: true, completion: nil)
+                            my_self.present(VC!, animated: true, completion: nil)
                         case .failure(let new_error):
-                            self.passworderror.text = new_error as? String
+                            my_self.passworderror.text = new_error as? String
                         }
                     })
                     
@@ -90,20 +90,41 @@ extension ViewController {
                     guard let error = evaluateError else {
                         return
                     }
-                    
+
                     print(self.evaluateAuthenticationPolicyMessageForLA(errorCode: error._code))
+                    
                     
                     //TODO: If you have choosen the 'Fallback authentication mechanism selected' (LAError.userFallback). Handle gracefully
                     
                 }
             }
         } else {
+            print("asdfsf")
+            let baseURL:URL = URL(string: "http://localhost:3001/")!
             
-            guard let error = authError else {
-                return
-            }
-            //TODO: Show appropriate alert if biometry/TouchID/FaceID is lockout or not enrolled
-            print(self.evaluateAuthenticationPolicyMessageForLA(errorCode: error.code))
+            Alamofire.request(baseURL.appendingPathComponent("sign_in_a_user"), method: .post, parameters: ["username": userName, "password": password, "status": status], encoding: JSONEncoding.default, headers: nil).responseString(completionHandler: {
+                response in
+                let data = response.value?.data(using: .utf8)
+                do {
+                    guard let json = try JSONSerialization.jsonObject(with: data!) as? [String:Any] else {return}
+                    let resul = json
+                    if (resul["success"] as? Int == 1) {
+                        print("success login")
+                        let VC = self.storyboard?.instantiateViewController(withIdentifier: "Authentication")
+                        my_self.present(VC!, animated: true, completion: nil)
+                    } else {
+                        print(resul["success"] ?? "error")
+                        my_self.passworderror.text = json["message"] as? String
+                    }
+                } catch let error as NSError {
+                    print(error)
+                }
+            })
+//            guard let error = authError else {
+//                return
+//            }
+//            //TODO: Show appropriate alert if biometry/TouchID/FaceID is lockout or not enrolled
+//            print(self.evaluateAuthenticationPolicyMessageForLA(errorCode: error.code))
         }
     }
     
