@@ -12,6 +12,7 @@
 		4434ABA32106CA8200BC1980 /* DLRadioButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4434ABA22106CA8200BC1980 /* DLRadioButton.framework */; };
 		444724F52108159700519169 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444724F42108159700519169 /* Authentication.swift */; };
 		4479C62C210022C300E7035B /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479C62B210022C300E7035B /* RestApiManager.swift */; };
+		447E171A2114D415007D7747 /* SwiftKeychainWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 447E17192114D415007D7747 /* SwiftKeychainWrapper.framework */; };
 		44F5B4FB20EC65C200CCDB0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5B4FA20EC65C200CCDB0F /* AppDelegate.swift */; };
 		44F5B4FD20EC65C200CCDB0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5B4FC20EC65C200CCDB0F /* ViewController.swift */; };
 		44F5B50020EC65C200CCDB0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F5B4FE20EC65C200CCDB0F /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		4434ABA22106CA8200BC1980 /* DLRadioButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DLRadioButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		444724F42108159700519169 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Authentication.swift; path = Supportcontrollers/Authentication.swift; sourceTree = "<group>"; };
 		4479C62B210022C300E7035B /* RestApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
+		447E17192114D415007D7747 /* SwiftKeychainWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftKeychainWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F5B4F720EC65C200CCDB0F /* iTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F5B4FA20EC65C200CCDB0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44F5B4FC20EC65C200CCDB0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				447E171A2114D415007D7747 /* SwiftKeychainWrapper.framework in Frameworks */,
 				4434ABA32106CA8200BC1980 /* DLRadioButton.framework in Frameworks */,
 				4431F44F2106A83E00EDFD3F /* Alamofire.framework in Frameworks */,
 				44F5B52A20EC675B00CCDB0F /* LocalAuthentication.framework in Frameworks */,
@@ -176,6 +179,7 @@
 		44F5B52820EC675B00CCDB0F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				447E17192114D415007D7747 /* SwiftKeychainWrapper.framework */,
 				4434ABA22106CA8200BC1980 /* DLRadioButton.framework */,
 				4431F44E2106A83E00EDFD3F /* Alamofire.framework */,
 				44F5B52920EC675B00CCDB0F /* LocalAuthentication.framework */,
@@ -344,12 +348,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-iTA/Pods-iTA-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLRadioButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

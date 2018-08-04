@@ -7,6 +7,7 @@ target 'iTA' do
   pod 'SwiftyJSON', '~> 4.0'
   pod 'Alamofire', '~> 4.7'
   pod 'DLRadioButton', '~> 1.4'
+  pod 'SwiftKeychainWrapper'
   # Pods for iTA
 
   target 'iTATests' do

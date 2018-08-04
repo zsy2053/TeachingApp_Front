@@ -139,21 +139,37 @@ class RegisterViewController: UIViewController {
     @IBAction func Register(_ sender: Any) {
         let baseURL:URL = URL(string: "http://localhost:3001/")!
 
-        Alamofire.request(baseURL.appendingPathComponent("users"), method: .post, parameters: ["username": user_name, "email": user_email, "password": user_password, "passwordconfirm": user_password_confirm, "status": user_status], encoding: JSONEncoding.default, headers: nil).responseJSON (completionHandler: {
+        Alamofire.request(baseURL.appendingPathComponent("users"), method: .post, parameters: ["username": user_name, "email": user_email, "password": user_password, "passwordconfirm": user_password_confirm, "status": user_status], encoding: JSONEncoding.default, headers: nil).responseString (completionHandler: {
             response in
-            switch response.result {
-            case .success:
-                let alert = UIAlertController(title: "Registration Success", message: "You have successfully registered an iTA account, thank you", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "Start studying", style: .default, handler: {_ in
-                    let VC = self.storyboard?.instantiateViewController(withIdentifier: "Authentication")
-                    
-                    self.present(VC!, animated: true, completion: nil)
-                }))
+            let data = response.value?.data(using: .utf8)
+            if (data != nil) {
+                do {
+                    guard let json = try JSONSerialization.jsonObject(with: data!) as? [String:Any] else {return}
+                    print(json["err"])
+                    if (json["success"] as? Int == 1) {
+                        let alert = UIAlertController(title: "Registration Success", message: "You have successfully registered an iTA account, thank you", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "Start studying", style: .default, handler: {_ in
+                            let VC = self.storyboard?.instantiateViewController(withIdentifier: "Authentication")
+                            
+                            self.present(VC!, animated: true, completion: nil)
+                        }))
+                        self.present(alert, animated: true)
+                    } else if (json["success"] as? Int == 0) {
+                        let alert = UIAlertController(title: "Registration Failed", message: json["err"] as? String, preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                        self.present(alert, animated: true)
+                    }
+                } catch let error as NSError {
+                    let alert = UIAlertController(title: "Registration Failed", message: error.localizedDescription, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(alert, animated: true)
+                }
+            } else {
+                let alert = UIAlertController(title: "Registration Failed", message: "Unknown Error, please try again later", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                 self.present(alert, animated: true)
-                
-            case .failure(let error):
-                print(error)
             }
+            
         })
     }
 }

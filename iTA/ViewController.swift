@@ -9,6 +9,7 @@
 import UIKit
 import LocalAuthentication
 import Alamofire
+import SwiftKeychainWrapper
 
 class ViewController: UIViewController {
     
@@ -105,19 +106,36 @@ extension ViewController {
             Alamofire.request(baseURL.appendingPathComponent("sign_in_a_user"), method: .post, parameters: ["username": userName, "password": password, "status": status], encoding: JSONEncoding.default, headers: nil).responseString(completionHandler: {
                 response in
                 let data = response.value?.data(using: .utf8)
-                do {
-                    guard let json = try JSONSerialization.jsonObject(with: data!) as? [String:Any] else {return}
-                    let resul = json
-                    if (resul["success"] as? Int == 1) {
-                        print("success login")
-                        let VC = self.storyboard?.instantiateViewController(withIdentifier: "Authentication")
-                        my_self.present(VC!, animated: true, completion: nil)
-                    } else {
-                        print(resul["success"] ?? "error")
-                        my_self.passworderror.text = json["message"] as? String
+                if (data != nil) {
+                    do {
+                        guard let json = try JSONSerialization.jsonObject(with: data!) as? [String:Any] else {return}
+                        let resul = json
+                        if (resul["success"] as? Int == 1) {
+                            
+                            print("success login")
+                            let saveJwtToken: Bool = KeychainWrapper.standard.set((resul["token"] as? String)!, forKey: "jwt")
+                            if (saveJwtToken) {
+                                let alert = UIAlertController(title: "Authenticated User Login", message: "Welcome to iTA teaching", preferredStyle: .alert)
+                                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                                    let VC = self.storyboard?.instantiateViewController(withIdentifier: "Authentication")
+                                    my_self.present(VC!, animated: true, completion: nil)
+                                }))
+                            } else {
+                                let alert = UIAlertController(title: "Authentication Failed", message: "User login failed, please try again later", preferredStyle: .alert)
+                                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                            }
+                            
+                            
+                        } else {
+                            print(resul["success"] ?? "error")
+                            my_self.passworderror.text = json["message"] as? String
+                        }
+                    } catch let error as NSError {
+                        print(error)
                     }
-                } catch let error as NSError {
-                    print(error)
+                } else {
+                    let alert = UIAlertController(title: "Authentication Failed", message: "User login failed, please try again later", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                 }
             })
 //            guard let error = authError else {
