@@ -39,13 +39,13 @@ class ViewController: UIViewController {
     
     @IBAction func TeacherLogin(_ sender: Any) {
         print("asfasf")
-        authenticationWithFaceID(userName: userName, password: password, status: "teacher", my_self: self)
+        authenticationWithFaceID(userName: userName, password: password, status: "teacher")
     }
     
     
     @IBAction func StudentLogin(_ sender: Any) {
         print(":sad")
-        authenticationWithFaceID(userName: userName, password: password, status: "student", my_self: self)
+        authenticationWithFaceID(userName: userName, password: password, status: "student")
     }
     
     override func didReceiveMemoryWarning() {
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
 }
 
 extension ViewController {
-    func authenticationWithFaceID( userName: String, password: String, status: String, my_self: ViewController) {
+    func authenticationWithFaceID( userName: String, password: String, status: String) {
         let localAuthenticationContext = LAContext()
         localAuthenticationContext.localizedFallbackTitle = "Use Passcode"
         
@@ -79,9 +79,9 @@ extension ViewController {
                         case .success:
                             print("success login")
                             let VC = self.storyboard?.instantiateViewController(withIdentifier: "Authentication")
-                            my_self.present(VC!, animated: true, completion: nil)
+                            self.present(VC!, animated: true, completion: nil)
                         case .failure(let new_error):
-                            my_self.passworderror.text = new_error as? String
+                            self.passworderror.text = new_error as? String
                         }
                     })
                     
@@ -112,23 +112,25 @@ extension ViewController {
                         let resul = json
                         if (resul["success"] as? Int == 1) {
                             
-                            print("success login")
                             let saveJwtToken: Bool = KeychainWrapper.standard.set((resul["token"] as? String)!, forKey: "jwt")
+                            print(saveJwtToken)
                             if (saveJwtToken) {
                                 let alert = UIAlertController(title: "Authenticated User Login", message: "Welcome to iTA teaching", preferredStyle: .alert)
-                                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {_ in
                                     let VC = self.storyboard?.instantiateViewController(withIdentifier: "Authentication")
-                                    my_self.present(VC!, animated: true, completion: nil)
+                                    self.present(VC!, animated: true, completion: nil)
                                 }))
+                                self.present(alert, animated: true)
                             } else {
                                 let alert = UIAlertController(title: "Authentication Failed", message: "User login failed, please try again later", preferredStyle: .alert)
                                 alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                                self.present(alert, animated: true)
                             }
                             
                             
                         } else {
                             print(resul["success"] ?? "error")
-                            my_self.passworderror.text = json["message"] as? String
+                            self.passworderror.text = json["message"] as? String
                         }
                     } catch let error as NSError {
                         print(error)

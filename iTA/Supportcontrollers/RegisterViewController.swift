@@ -145,7 +145,6 @@ class RegisterViewController: UIViewController {
             if (data != nil) {
                 do {
                     guard let json = try JSONSerialization.jsonObject(with: data!) as? [String:Any] else {return}
-                    print(json["err"])
                     if (json["success"] as? Int == 1) {
                         let alert = UIAlertController(title: "Registration Success", message: "You have successfully registered an iTA account, thank you", preferredStyle: .alert)
                         alert.addAction(UIAlertAction(title: "Start studying", style: .default, handler: {_ in
