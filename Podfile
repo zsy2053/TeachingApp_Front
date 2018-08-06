@@ -8,6 +8,7 @@ target 'iTA' do
   pod 'Alamofire', '~> 4.7'
   pod 'DLRadioButton', '~> 1.4'
   pod 'SwiftKeychainWrapper'
+  pod 'SideMenu'
   # Pods for iTA
 
   target 'iTATests' do

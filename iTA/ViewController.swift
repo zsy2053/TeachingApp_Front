@@ -38,13 +38,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func TeacherLogin(_ sender: Any) {
-        print("asfasf")
         authenticationWithFaceID(userName: userName, password: password, status: "teacher")
     }
     
     
     @IBAction func StudentLogin(_ sender: Any) {
-        print(":sad")
         authenticationWithFaceID(userName: userName, password: password, status: "student")
     }
     

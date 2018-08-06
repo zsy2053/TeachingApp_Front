@@ -7,14 +7,13 @@
 //
 
 import UIKit
-import LocalAuthentication
 
-class Authentication: UIViewController {
+class Authentication: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        authenticationWithFaceID()
-
+        
+        self.addSlideMenuButton()
         // Do any additional setup after loading the view.
     }
 
@@ -23,7 +22,6 @@ class Authentication: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 

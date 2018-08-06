@@ -11,8 +11,11 @@
 		4431F44F2106A83E00EDFD3F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4431F44E2106A83E00EDFD3F /* Alamofire.framework */; };
 		4434ABA32106CA8200BC1980 /* DLRadioButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4434ABA22106CA8200BC1980 /* DLRadioButton.framework */; };
 		444724F52108159700519169 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444724F42108159700519169 /* Authentication.swift */; };
+		446141C92116004C00C76DE7 /* SideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446141C82116004C00C76DE7 /* SideMenu.framework */; };
 		4479C62C210022C300E7035B /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479C62B210022C300E7035B /* RestApiManager.swift */; };
 		447E171A2114D415007D7747 /* SwiftKeychainWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 447E17192114D415007D7747 /* SwiftKeychainWrapper.framework */; };
+		44F568A82117C74600DCCCB3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F568A62117C74600DCCCB3 /* BaseViewController.swift */; };
+		44F568A92117C74600DCCCB3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F568A72117C74600DCCCB3 /* MenuViewController.swift */; };
 		44F5B4FB20EC65C200CCDB0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5B4FA20EC65C200CCDB0F /* AppDelegate.swift */; };
 		44F5B4FD20EC65C200CCDB0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5B4FC20EC65C200CCDB0F /* ViewController.swift */; };
 		44F5B50020EC65C200CCDB0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F5B4FE20EC65C200CCDB0F /* Main.storyboard */; };
@@ -48,8 +51,11 @@
 		4431F44E2106A83E00EDFD3F /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4434ABA22106CA8200BC1980 /* DLRadioButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DLRadioButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		444724F42108159700519169 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Authentication.swift; path = Supportcontrollers/Authentication.swift; sourceTree = "<group>"; };
+		446141C82116004C00C76DE7 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4479C62B210022C300E7035B /* RestApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
 		447E17192114D415007D7747 /* SwiftKeychainWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftKeychainWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44F568A62117C74600DCCCB3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = "../../../Downloads/AKSwiftSlideMenu-master/AKSwiftSlideMenu/BaseViewController.swift"; sourceTree = "<group>"; };
+		44F568A72117C74600DCCCB3 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = "../../../Downloads/AKSwiftSlideMenu-master/AKSwiftSlideMenu/MenuViewController.swift"; sourceTree = "<group>"; };
 		44F5B4F720EC65C200CCDB0F /* iTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F5B4FA20EC65C200CCDB0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44F5B4FC20EC65C200CCDB0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				446141C92116004C00C76DE7 /* SideMenu.framework in Frameworks */,
 				447E171A2114D415007D7747 /* SwiftKeychainWrapper.framework in Frameworks */,
 				4434ABA32106CA8200BC1980 /* DLRadioButton.framework in Frameworks */,
 				4431F44F2106A83E00EDFD3F /* Alamofire.framework in Frameworks */,
@@ -145,6 +152,8 @@
 		44F5B4F920EC65C200CCDB0F /* iTA */ = {
 			isa = PBXGroup;
 			children = (
+				44F568A62117C74600DCCCB3 /* BaseViewController.swift */,
+				44F568A72117C74600DCCCB3 /* MenuViewController.swift */,
 				44F5B4FA20EC65C200CCDB0F /* AppDelegate.swift */,
 				44F5B4FC20EC65C200CCDB0F /* ViewController.swift */,
 				44F5B52D20EC6CAB00CCDB0F /* RegisterViewController.swift */,
@@ -179,6 +188,7 @@
 		44F5B52820EC675B00CCDB0F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				446141C82116004C00C76DE7 /* SideMenu.framework */,
 				447E17192114D415007D7747 /* SwiftKeychainWrapper.framework */,
 				4434ABA22106CA8200BC1980 /* DLRadioButton.framework */,
 				4431F44E2106A83E00EDFD3F /* Alamofire.framework */,
@@ -348,6 +358,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-iTA/Pods-iTA-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
@@ -355,6 +366,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLRadioButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -409,7 +421,9 @@
 				44F5B52E20EC6CAB00CCDB0F /* RegisterViewController.swift in Sources */,
 				44F5B4FD20EC65C200CCDB0F /* ViewController.swift in Sources */,
 				4479C62C210022C300E7035B /* RestApiManager.swift in Sources */,
+				44F568A92117C74600DCCCB3 /* MenuViewController.swift in Sources */,
 				444724F52108159700519169 /* Authentication.swift in Sources */,
+				44F568A82117C74600DCCCB3 /* BaseViewController.swift in Sources */,
 				44F5B4FB20EC65C200CCDB0F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
