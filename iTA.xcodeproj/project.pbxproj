@@ -14,8 +14,6 @@
 		446141C92116004C00C76DE7 /* SideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446141C82116004C00C76DE7 /* SideMenu.framework */; };
 		4479C62C210022C300E7035B /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479C62B210022C300E7035B /* RestApiManager.swift */; };
 		447E171A2114D415007D7747 /* SwiftKeychainWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 447E17192114D415007D7747 /* SwiftKeychainWrapper.framework */; };
-		44F568A82117C74600DCCCB3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F568A62117C74600DCCCB3 /* BaseViewController.swift */; };
-		44F568A92117C74600DCCCB3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F568A72117C74600DCCCB3 /* MenuViewController.swift */; };
 		44F5B4FB20EC65C200CCDB0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5B4FA20EC65C200CCDB0F /* AppDelegate.swift */; };
 		44F5B4FD20EC65C200CCDB0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5B4FC20EC65C200CCDB0F /* ViewController.swift */; };
 		44F5B50020EC65C200CCDB0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F5B4FE20EC65C200CCDB0F /* Main.storyboard */; };
@@ -25,6 +23,8 @@
 		44F5B51B20EC65C300CCDB0F /* iTAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5B51A20EC65C300CCDB0F /* iTAUITests.swift */; };
 		44F5B52A20EC675B00CCDB0F /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F5B52920EC675B00CCDB0F /* LocalAuthentication.framework */; };
 		44F5B52E20EC6CAB00CCDB0F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5B52D20EC6CAB00CCDB0F /* RegisterViewController.swift */; };
+		63D3590B212A48FB00F42F5B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D3590A212A48FB00F42F5B /* BaseViewController.swift */; };
+		63D3590D212A496500F42F5B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D3590C212A496500F42F5B /* MenuViewController.swift */; };
 		A23B5C5218213164244C0EEF /* Pods_iTA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48063A8E713F1BB3682DE10C /* Pods_iTA.framework */; };
 		FC336106AF123F60CF8F3ADA /* Pods_iTATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88E8AFF6AF4DD66677E6FEA4 /* Pods_iTATests.framework */; };
 /* End PBXBuildFile section */
@@ -54,8 +54,6 @@
 		446141C82116004C00C76DE7 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4479C62B210022C300E7035B /* RestApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
 		447E17192114D415007D7747 /* SwiftKeychainWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftKeychainWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		44F568A62117C74600DCCCB3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = "../../../Downloads/AKSwiftSlideMenu-master/AKSwiftSlideMenu/BaseViewController.swift"; sourceTree = "<group>"; };
-		44F568A72117C74600DCCCB3 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = "../../../Downloads/AKSwiftSlideMenu-master/AKSwiftSlideMenu/MenuViewController.swift"; sourceTree = "<group>"; };
 		44F5B4F720EC65C200CCDB0F /* iTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F5B4FA20EC65C200CCDB0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44F5B4FC20EC65C200CCDB0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +70,8 @@
 		44F5B52920EC675B00CCDB0F /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		44F5B52D20EC6CAB00CCDB0F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = Supportcontrollers/RegisterViewController.swift; sourceTree = "<group>"; };
 		48063A8E713F1BB3682DE10C /* Pods_iTA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63D3590A212A48FB00F42F5B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		63D3590C212A496500F42F5B /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		815E1F78EF99045FE80553C8 /* Pods-iTATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTATests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTATests/Pods-iTATests.release.xcconfig"; sourceTree = "<group>"; };
 		839E4318AE597362213E336C /* Pods-iTATests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTATests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTATests/Pods-iTATests.debug.xcconfig"; sourceTree = "<group>"; };
 		88E8AFF6AF4DD66677E6FEA4 /* Pods_iTATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,8 +152,6 @@
 		44F5B4F920EC65C200CCDB0F /* iTA */ = {
 			isa = PBXGroup;
 			children = (
-				44F568A62117C74600DCCCB3 /* BaseViewController.swift */,
-				44F568A72117C74600DCCCB3 /* MenuViewController.swift */,
 				44F5B4FA20EC65C200CCDB0F /* AppDelegate.swift */,
 				44F5B4FC20EC65C200CCDB0F /* ViewController.swift */,
 				44F5B52D20EC6CAB00CCDB0F /* RegisterViewController.swift */,
@@ -163,6 +161,8 @@
 				44F5B50320EC65C300CCDB0F /* LaunchScreen.storyboard */,
 				44F5B50620EC65C300CCDB0F /* Info.plist */,
 				4479C62B210022C300E7035B /* RestApiManager.swift */,
+				63D3590A212A48FB00F42F5B /* BaseViewController.swift */,
+				63D3590C212A496500F42F5B /* MenuViewController.swift */,
 			);
 			path = iTA;
 			sourceTree = "<group>";
@@ -421,9 +421,9 @@
 				44F5B52E20EC6CAB00CCDB0F /* RegisterViewController.swift in Sources */,
 				44F5B4FD20EC65C200CCDB0F /* ViewController.swift in Sources */,
 				4479C62C210022C300E7035B /* RestApiManager.swift in Sources */,
-				44F568A92117C74600DCCCB3 /* MenuViewController.swift in Sources */,
+				63D3590D212A496500F42F5B /* MenuViewController.swift in Sources */,
 				444724F52108159700519169 /* Authentication.swift in Sources */,
-				44F568A82117C74600DCCCB3 /* BaseViewController.swift in Sources */,
+				63D3590B212A48FB00F42F5B /* BaseViewController.swift in Sources */,
 				44F5B4FB20EC65C200CCDB0F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -599,6 +599,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6PKN5CVAUC;
 				INFOPLIST_FILE = iTA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -617,6 +618,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6PKN5CVAUC;
 				INFOPLIST_FILE = iTA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

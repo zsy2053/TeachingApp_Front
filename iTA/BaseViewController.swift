@@ -1,9 +1,9 @@
 //
 //  BaseViewController.swift
-//  AKSwiftSlideMenu
+//  iTA
 //
-//  Created by Ashish on 21/09/15.
-//  Copyright (c) 2015 Kode. All rights reserved.
+//  Created by xiande Yang on 2018-08-19.
+//  Copyright © 2018 Shuyang Zang. All rights reserved.
 //
 
 import UIKit
@@ -26,7 +26,7 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
         switch(index){
         case 0:
             print("Home\n", terminator: "")
-
+            
             self.openViewControllerBasedOnIdentifier("Home")
             
             break
@@ -61,7 +61,7 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
         let customBarItem = UIBarButtonItem(customView: btnShowMenu)
         self.navigationItem.leftBarButtonItem = customBarItem;
     }
-
+    
     func defaultMenuImage() -> UIImage {
         var defaultMenuImage = UIImage()
         
@@ -80,7 +80,7 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
         defaultMenuImage = UIGraphicsGetImageFromCurrentImageContext()!
         
         UIGraphicsEndImageContext()
-       
+        
         return defaultMenuImage;
     }
     
@@ -100,8 +100,8 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
                 viewMenuBack.frame = frameMenu
                 viewMenuBack.layoutIfNeeded()
                 viewMenuBack.backgroundColor = UIColor.clear
-                }, completion: { (finished) -> Void in
-                    viewMenuBack.removeFromSuperview()
+            }, completion: { (finished) -> Void in
+                viewMenuBack.removeFromSuperview()
             })
             
             return
@@ -123,6 +123,7 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
         UIView.animate(withDuration: 0.3, animations: { () -> Void in
             menuVC.view.frame=CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height);
             sender.isEnabled = true
-            }, completion:nil)
+        }, completion:nil)
     }
 }
+
