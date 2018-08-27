@@ -314,7 +314,7 @@
         <!--Menu View Controller-->
         <scene sceneID="cUy-HM-o0F">
             <objects>
-                <viewController storyboardIdentifier="MenuViewController" id="5zZ-tl-943" customClass="MenuViewController" customModule="AKSwiftSlideMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuViewController" id="5zZ-tl-943" customClass="MenuViewController" customModule="iTA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NW7-Ps-1dl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

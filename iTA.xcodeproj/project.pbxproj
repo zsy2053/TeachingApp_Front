@@ -23,6 +23,8 @@
 		44F5B51B20EC65C300CCDB0F /* iTAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5B51A20EC65C300CCDB0F /* iTAUITests.swift */; };
 		44F5B52A20EC675B00CCDB0F /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F5B52920EC675B00CCDB0F /* LocalAuthentication.framework */; };
 		44F5B52E20EC6CAB00CCDB0F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5B52D20EC6CAB00CCDB0F /* RegisterViewController.swift */; };
+		637E2A062133813E0097A2D6 /* VimeoNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637E2A052133813E0097A2D6 /* VimeoNetworking.framework */; };
+		637E2A0A213384C10097A2D6 /* HCVimeoVideoExtractor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637E2A09213384C10097A2D6 /* HCVimeoVideoExtractor.framework */; };
 		63D3590B212A48FB00F42F5B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D3590A212A48FB00F42F5B /* BaseViewController.swift */; };
 		63D3590D212A496500F42F5B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D3590C212A496500F42F5B /* MenuViewController.swift */; };
 		A23B5C5218213164244C0EEF /* Pods_iTA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48063A8E713F1BB3682DE10C /* Pods_iTA.framework */; };
@@ -70,6 +72,8 @@
 		44F5B52920EC675B00CCDB0F /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		44F5B52D20EC6CAB00CCDB0F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = Supportcontrollers/RegisterViewController.swift; sourceTree = "<group>"; };
 		48063A8E713F1BB3682DE10C /* Pods_iTA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		637E2A052133813E0097A2D6 /* VimeoNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VimeoNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		637E2A09213384C10097A2D6 /* HCVimeoVideoExtractor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HCVimeoVideoExtractor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D3590A212A48FB00F42F5B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		63D3590C212A496500F42F5B /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		815E1F78EF99045FE80553C8 /* Pods-iTATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTATests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTATests/Pods-iTATests.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				637E2A0A213384C10097A2D6 /* HCVimeoVideoExtractor.framework in Frameworks */,
+				637E2A062133813E0097A2D6 /* VimeoNetworking.framework in Frameworks */,
 				446141C92116004C00C76DE7 /* SideMenu.framework in Frameworks */,
 				447E171A2114D415007D7747 /* SwiftKeychainWrapper.framework in Frameworks */,
 				4434ABA32106CA8200BC1980 /* DLRadioButton.framework in Frameworks */,
@@ -188,6 +194,8 @@
 		44F5B52820EC675B00CCDB0F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				637E2A09213384C10097A2D6 /* HCVimeoVideoExtractor.framework */,
+				637E2A052133813E0097A2D6 /* VimeoNetworking.framework */,
 				446141C82116004C00C76DE7 /* SideMenu.framework */,
 				447E17192114D415007D7747 /* SwiftKeychainWrapper.framework */,
 				4434ABA22106CA8200BC1980 /* DLRadioButton.framework */,
@@ -356,19 +364,25 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iTA/Pods-iTA-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework",
+				"${BUILT_PRODUCTS_DIR}/HCVimeoVideoExtractor/HCVimeoVideoExtractor.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/VimeoNetworking/VimeoNetworking.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLRadioButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HCVimeoVideoExtractor.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VimeoNetworking.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
