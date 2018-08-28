@@ -21,6 +21,7 @@ target 'iTA' do
   pod 'SwiftKeychainWrapper'
   pod 'SideMenu'
   pod 'HCVimeoVideoExtractor'
+	pod 'Stripe'
   # Pods for iTA
 
   target 'iTATests' do

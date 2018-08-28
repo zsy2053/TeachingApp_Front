@@ -18,6 +18,7 @@ PODS:
   - DLRadioButton (1.4.12)
   - HCVimeoVideoExtractor (0.0.1)
   - SideMenu (4.0.0)
+  - Stripe (13.2.0)
   - SwiftKeychainWrapper (3.0.1)
   - SwiftLint (0.25.1)
   - SwiftyJSON (4.1.0)
@@ -30,6 +31,7 @@ DEPENDENCIES:
   - DLRadioButton (~> 1.4)
   - HCVimeoVideoExtractor
   - SideMenu
+  - Stripe
   - SwiftKeychainWrapper
   - SwiftLint (= 0.25.1)
   - SwiftyJSON (~> 4.0)
@@ -42,6 +44,7 @@ SPEC REPOS:
     - DLRadioButton
     - HCVimeoVideoExtractor
     - SideMenu
+    - Stripe
     - SwiftKeychainWrapper
     - SwiftLint
     - SwiftyJSON
@@ -56,11 +59,12 @@ SPEC CHECKSUMS:
   DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
   HCVimeoVideoExtractor: d3c251280f7027ffd324266e1930b3618e0adb46
   SideMenu: 70ee5657df63ec3382660ec4ef470bf1cf5db07d
+  Stripe: 2c69e216061d54d9c538204bb4f58bd597ddfc5b
   SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
   SwiftLint: ce933681be10c3266e82576dad676fa815a602e9
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
   VimeoNetworking: 54974fa10ada5a7fc4f003916c5f0992faa50e0d
 
-PODFILE CHECKSUM: 27f940358ffd8831073b36f272a3c5d7f6c81736
+PODFILE CHECKSUM: 03bd59cf9a24a98f46ada4825e5db66fa7aa5eeb
 
 COCOAPODS: 1.5.3
