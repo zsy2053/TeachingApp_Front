@@ -14,14 +14,7 @@ class Authentication: BaseViewController {
         super.viewDidLoad()
         
         self.addSlideMenuButton()
-        let appConfiguration = AppConfiguration(
-            clientIdentifier: "6acfef25fb4b5bf0996de716a6a6578913cfee68",
-            clientSecret: "zf66Fic9htXi5nhoWfGAeQcwSkkAAJ5lofnJEEAK8zP+Sio7LiyLNiSkL3ML9Zw0hKxaDHebcdiIX2hBzph7cLej85fG82NIBrxki60XTkZrY4qLHAcA0TuT7Ts2tyrb",
-            scopes: [.Public, .Private],
-            keychainService: "com.vimeo.keychain_service"
-        )
-        let vimeoClient = VimeoClient(appConfiguration: appConfiguration)
-        // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -17,6 +17,60 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let appConfiguration = AppConfiguration(
+            clientIdentifier: "6acfef25fb4b5bf0996de716a6a6578913cfee68",
+            clientSecret: "zf66Fic9htXi5nhoWfGAeQcwSkkAAJ5lofnJEEAK8zP+Sio7LiyLNiSkL3ML9Zw0hKxaDHebcdiIX2hBzph7cLej85fG82NIBrxki60XTkZrY4qLHAcA0TuT7Ts2tyrb",
+            scopes: [.Public, .Private],
+            keychainService: "com.vimeo.keychain_service"
+        )
+        let vimeoClient = VimeoClient(appConfiguration: appConfiguration)
+        let authenticationController = AuthenticationController(client: vimeoClient, appConfiguration: appConfiguration)
+        let loadedAccount: VIMAccount?
+        do
+        {
+            loadedAccount = try authenticationController.loadUserAccount()
+        }
+        catch let error
+        {
+            loadedAccount = nil
+            print("error loading account \(error)")
+        }
+        
+        // If we didn't find an account to load or loading failed, we'll authenticate using client credentials
+        
+        if loadedAccount == nil
+        {
+            authenticationController.clientCredentialsGrant { result in
+                
+                switch result
+                {
+                case .success(let account):
+                    print("authenticated successfully: \(account)")
+                    if let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Authentication") as? Authentication {
+                        if let window = self.window, let rootViewController = window.rootViewController {
+                            var currentController = rootViewController
+                            while let presentedController = currentController.presentedViewController {
+                                currentController = presentedController
+                            }
+                            currentController.present(controller, animated: true, completion: nil)
+                        }
+                    }
+                case .failure(let error):
+                    let appConfiguration = AppConfiguration(
+                        clientIdentifier: "6acfef25fb4b5bf0996de716a6a6578913cfee68",
+                        clientSecret: "zf66Fic9htXi5nhoWfGAeQcwSkkAAJ5lofnJEEAK8zP+Sio7LiyLNiSkL3ML9Zw0hKxaDHebcdiIX2hBzph7cLej85fG82NIBrxki60XTkZrY4qLHAcA0TuT7Ts2tyrb",
+                        scopes: [.Public, .Private],
+                        keychainService: "com.vimeo.keychain_service"
+                    )
+                    let vimeoClient = VimeoClient(appConfiguration: appConfiguration)
+                    let authenticationController = AuthenticationController(client: vimeoClient, appConfiguration: appConfiguration)
+                    
+                    let URL = authenticationController.codeGrantAuthorizationURL()
+                    UIApplication.shared.openURL(URL)
+                    print("failure authenticating: \(error)")
+                }
+            }
+        }
         return true
     }
 
