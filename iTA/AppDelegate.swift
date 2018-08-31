@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Stripe
 import VimeoNetworking
 
 @UIApplicationMain
@@ -17,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        STPPaymentConfiguration.shared().publishableKey = "pk_test_qglYITXHpo49PPtffT2vQEcg"
         let appConfiguration = AppConfiguration(
             clientIdentifier: "6acfef25fb4b5bf0996de716a6a6578913cfee68",
             clientSecret: "zf66Fic9htXi5nhoWfGAeQcwSkkAAJ5lofnJEEAK8zP+Sio7LiyLNiSkL3ML9Zw0hKxaDHebcdiIX2hBzph7cLej85fG82NIBrxki60XTkZrY4qLHAcA0TuT7Ts2tyrb",

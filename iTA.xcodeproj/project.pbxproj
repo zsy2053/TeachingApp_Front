@@ -25,6 +25,8 @@
 		44F5B52E20EC6CAB00CCDB0F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5B52D20EC6CAB00CCDB0F /* RegisterViewController.swift */; };
 		637E2A062133813E0097A2D6 /* VimeoNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637E2A052133813E0097A2D6 /* VimeoNetworking.framework */; };
 		637E2A0A213384C10097A2D6 /* HCVimeoVideoExtractor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637E2A09213384C10097A2D6 /* HCVimeoVideoExtractor.framework */; };
+		638E35132138CA3A003116E6 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638E35122138CA3A003116E6 /* PaymentViewController.swift */; };
+		638E35152138DF83003116E6 /* SwripeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638E35142138DF83003116E6 /* SwripeClient.swift */; };
 		63D3590B212A48FB00F42F5B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D3590A212A48FB00F42F5B /* BaseViewController.swift */; };
 		63D3590D212A496500F42F5B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D3590C212A496500F42F5B /* MenuViewController.swift */; };
 		A23B5C5218213164244C0EEF /* Pods_iTA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48063A8E713F1BB3682DE10C /* Pods_iTA.framework */; };
@@ -74,6 +76,8 @@
 		48063A8E713F1BB3682DE10C /* Pods_iTA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		637E2A052133813E0097A2D6 /* VimeoNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VimeoNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		637E2A09213384C10097A2D6 /* HCVimeoVideoExtractor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HCVimeoVideoExtractor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		638E35122138CA3A003116E6 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		638E35142138DF83003116E6 /* SwripeClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwripeClient.swift; sourceTree = "<group>"; };
 		63D3590A212A48FB00F42F5B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		63D3590C212A496500F42F5B /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		815E1F78EF99045FE80553C8 /* Pods-iTATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTATests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTATests/Pods-iTATests.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +166,7 @@
 				44F5B4FC20EC65C200CCDB0F /* ViewController.swift */,
 				44F5B52D20EC6CAB00CCDB0F /* RegisterViewController.swift */,
 				44F5B4FE20EC65C200CCDB0F /* Main.storyboard */,
+				638E35122138CA3A003116E6 /* PaymentViewController.swift */,
 				444724F42108159700519169 /* Authentication.swift */,
 				44F5B50120EC65C300CCDB0F /* Assets.xcassets */,
 				44F5B50320EC65C300CCDB0F /* LaunchScreen.storyboard */,
@@ -169,6 +174,7 @@
 				4479C62B210022C300E7035B /* RestApiManager.swift */,
 				63D3590A212A48FB00F42F5B /* BaseViewController.swift */,
 				63D3590C212A496500F42F5B /* MenuViewController.swift */,
+				638E35142138DF83003116E6 /* SwripeClient.swift */,
 			);
 			path = iTA;
 			sourceTree = "<group>";
@@ -435,8 +441,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				44F5B52E20EC6CAB00CCDB0F /* RegisterViewController.swift in Sources */,
+				638E35152138DF83003116E6 /* SwripeClient.swift in Sources */,
 				44F5B4FD20EC65C200CCDB0F /* ViewController.swift in Sources */,
 				4479C62C210022C300E7035B /* RestApiManager.swift in Sources */,
+				638E35132138CA3A003116E6 /* PaymentViewController.swift in Sources */,
 				63D3590D212A496500F42F5B /* MenuViewController.swift in Sources */,
 				444724F52108159700519169 /* Authentication.swift in Sources */,
 				63D3590B212A48FB00F42F5B /* BaseViewController.swift in Sources */,
