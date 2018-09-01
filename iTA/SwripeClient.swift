@@ -24,7 +24,7 @@ final class StripeClient {
     }
     
     private lazy var baseURL: URL = {
-        guard let url = URL(string: "http://localhost:3001/") else {
+        guard let url = URL(string: "http://localhost:3001/charge") else {
             fatalError("Invalid URL")
         }
         return url

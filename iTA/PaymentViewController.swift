@@ -9,7 +9,7 @@
 import UIKit
 import Stripe
 
-class PaymentViewController: BaseViewController {
+class PaymentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,16 +23,17 @@ class PaymentViewController: BaseViewController {
         print("entered")
         let addCardViewController = STPAddCardViewController()
         addCardViewController.delegate = self
-        self.present(addCardViewController, animated: true, completion: nil)
-            
+//        self.present(addCardViewController, animated: true, completion: nil)
+        navigationController?.pushViewController(addCardViewController, animated: true)
     }
 }
 
 extension PaymentViewController: STPAddCardViewControllerDelegate {
     func addCardViewControllerDidCancel(_ addCardViewController: STPAddCardViewController) {
-        let VC = self.storyboard?.instantiateViewController(withIdentifier: "RegisterViewController")
-        
-        self.present(VC!, animated: true, completion: nil)
+//        let VC = self.storyboard?.instantiateViewController(withIdentifier: "RegisterViewController")
+//
+//        self.present(VC!, animated: true, completion: nil)
+          navigationController?.popViewController(animated: true)
     }
     
     func addCardViewController(_ addCardViewController: STPAddCardViewController, didCreateToken token: STPToken, completion: @escaping STPErrorBlock) {
@@ -44,9 +45,10 @@ extension PaymentViewController: STPAddCardViewControllerDelegate {
                 
                 let alertController = UIAlertController(title: "Congrats", message: "Your payment was successful!", preferredStyle: .alert)
                 let alertAction = UIAlertAction(title: "OK", style: .default, handler: { _ in
-                    let VC = self.storyboard?.instantiateViewController(withIdentifier: "Authentication")
-                    
-                    self.present(VC!, animated: true, completion: nil)
+//                    let VC = self.storyboard?.instantiateViewController(withIdentifier: "Authentication")
+//
+//                    self.present(VC!, animated: true, completion: nil)
+                    print(token)
                 })
                 alertController.addAction(alertAction)
                 self.present(alertController, animated: true)
