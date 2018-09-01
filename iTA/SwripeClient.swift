@@ -24,16 +24,18 @@ final class StripeClient {
     }
     
     private lazy var baseURL: URL = {
-        guard let url = URL(string: "http://localhost:3001/charge") else {
+        guard let url = URL(string: "http://localhost:3001") else {
             fatalError("Invalid URL")
         }
         return url
     }()
     
     func completeCharge(with token: STPToken, amount: Int, completion: @escaping (Result) -> Void) {
+        print("asfsfs")
         // 1
         let url = baseURL.appendingPathComponent("charge")
         // 2
+        print(token)
         let params: [String: Any] = [
             "token": token.tokenId,
             "amount": amount,

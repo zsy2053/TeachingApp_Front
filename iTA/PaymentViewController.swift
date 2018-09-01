@@ -30,9 +30,6 @@ class PaymentViewController: UIViewController {
 
 extension PaymentViewController: STPAddCardViewControllerDelegate {
     func addCardViewControllerDidCancel(_ addCardViewController: STPAddCardViewController) {
-//        let VC = self.storyboard?.instantiateViewController(withIdentifier: "RegisterViewController")
-//
-//        self.present(VC!, animated: true, completion: nil)
           navigationController?.popViewController(animated: true)
     }
     
@@ -45,10 +42,7 @@ extension PaymentViewController: STPAddCardViewControllerDelegate {
                 
                 let alertController = UIAlertController(title: "Congrats", message: "Your payment was successful!", preferredStyle: .alert)
                 let alertAction = UIAlertAction(title: "OK", style: .default, handler: { _ in
-//                    let VC = self.storyboard?.instantiateViewController(withIdentifier: "Authentication")
-//
-//                    self.present(VC!, animated: true, completion: nil)
-                    print(token)
+                    self.navigationController?.popViewController(animated: true)
                 })
                 alertController.addAction(alertAction)
                 self.present(alertController, animated: true)
